@@ -1,6 +1,10 @@
 # kubernetes HPA(horizontal pod autoscaler)
 sample files to create a hpa
 
+$ minikube start
+
+$ minikube status
+
 __Enable addon__
 >$ minikube addons enable metrics-server
 >$ minikube addons list
@@ -24,4 +28,7 @@ _get minikube service url_
 >$ minikube service php-apache --url
 
 >$ while true; do curl minikube_service_url ; done
+
+__Check pod metrics__
+>$ kubectl top pod
 

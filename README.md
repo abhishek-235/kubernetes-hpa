@@ -23,5 +23,5 @@ __Load test__
 _get minikube service url_
 >$ minikube service php-apache --url
 
->$ while true; do curl <minikube service url>; done
+>$ while true; do curl minikube_service_url ; done
 
